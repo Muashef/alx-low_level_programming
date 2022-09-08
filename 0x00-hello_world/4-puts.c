@@ -1,12 +1,9 @@
 #include <stdio.h>
 
 /**
- *
- *  main - Prints String
- *
- *  Description: "\"Programming is like building a multilingual puzzle"
- *
- *  Return: always 0
+ *  main - entrypoint
+ * 
+ *  Return: AAlways 0 (Success)
  *
  **/
 
