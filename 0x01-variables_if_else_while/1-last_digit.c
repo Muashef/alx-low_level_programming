@@ -1,12 +1,10 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
-
 /**
 * main - Entry point
-*
 * Description: This program will generate a random number
-* Result: Always 0 (Successful)
+* Return: Always 0 (Successful)
 */
 int main(void)
 {
@@ -16,7 +14,6 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	last_digit = n % 10;
-
 	if (last_digit > 5)
 	{
 		printf("Last digit of %d is %d and is greater than 5\n", n, last_digit);
@@ -31,3 +28,4 @@ int main(void)
 	}
 	return (0);
 }
+
