@@ -4,7 +4,7 @@
  * @n: n is an integer
  * Return: 0
  */
-print_sign(int n)
+int print_sign(int n)
 {
 	if (n > 0)
 	{
