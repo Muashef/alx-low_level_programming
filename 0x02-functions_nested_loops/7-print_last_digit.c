@@ -1,8 +1,7 @@
 #include "main.h"
-
 /**
  * print_last_digit - print the last digit of a number
- * @n: n is nan integer
+ * @n: n is an integer
  * Return: value of the last digit
  */
 int print_last_digit(int n)
