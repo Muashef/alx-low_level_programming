@@ -13,3 +13,4 @@ int _strlen(char *s)
 	while (s[length])
 		length++;
 	return (length);
+}
