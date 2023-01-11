@@ -1,10 +1,8 @@
-#ifndef _HASH_TABLES_
-#define _HASH_TABLES_
+#ifndef HASH_TABLES_H
+#define HASH_TABLES_HI
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <stddef.h>
-#include <stdbool.h>
 #include <string.h>
 
 /**
@@ -32,12 +30,11 @@ typedef struct hash_node_s
  */
 typedef struct hash_table_s
 {
-	unisigned long int size;
+	unsigned long int size;
 	hash_node_t **array;
 } hash_table_t;
 
 hash_table_t *hash_table_create(unsigned long int size);
-
 unsigned long int hash_djb2(const unsigned char *str);
 unsigned long int key_index(const unsigned char *key, unsigned long int size);
 int hash_table_set(hash_table_t *ht, const char *key, const char *value);
@@ -62,7 +59,7 @@ typedef struct shash_node_s
 	struct shash_node_s *next;
 	struct shash_node_s *sprev;
 	struct shash_node_s *snext;
-} shah_node_t;
+} shash_node_t;
 
 /**
  * struct shash_table_s - Sorted hash table data structure
